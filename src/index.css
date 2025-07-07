@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ruma Design System - Minimalist Black & White Theme */
+/* ruma Design System - Clean Light Theme */
 
 @layer base {
   :root {
-    /* Monochrome Color System */
+    /* Light Monochrome Color System */
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
 
@@ -17,17 +17,17 @@
     --popover-foreground: 0 0% 3.9%;
 
     /* Primary - Pure Black */
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 3.9%;
+    --primary-foreground: 0 0% 100%;
     --primary-light: 0 0% 20%;
 
     /* Secondary - Light Gray */
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
 
-    /* Accent - Dark Gray */
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 98%;
+    /* Accent - Medium Gray */
+    --accent: 0 0% 45%;
+    --accent-foreground: 0 0% 100%;
 
     /* Muted tones */
     --muted: 0 0% 96.1%;
@@ -40,13 +40,13 @@
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
 
-    /* Minimalist Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 0% 3.9%), hsl(0 0% 15%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 3.9%) 0%, hsl(0 0% 9%) 50%, hsl(0 0% 15%) 100%);
+    /* Light Theme Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 96.1%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 50%, hsl(0 0% 96.1%) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(0 0% 96.1%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(0 0% 98%));
 
-    /* Elegant Shadows */
+    /* Light Theme Shadows */
     --shadow-elegant: 0 25px 50px -12px hsl(0 0% 0% / 0.08);
     --shadow-card: 0 4px 24px -6px hsl(0 0% 0% / 0.08);
     --shadow-hover: 0 10px 40px -12px hsl(0 0% 0% / 0.12);
