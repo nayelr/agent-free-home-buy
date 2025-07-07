@@ -27,37 +27,38 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-primary/5">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
+    <section className="py-32 px-6 bg-gradient-subtle">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-24">
+          <h2 className="text-5xl md:text-6xl font-black mb-8 text-foreground tracking-tight">
             How it works
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="w-24 h-px bg-primary mx-auto mb-8"></div>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Our streamlined process makes home buying simple, transparent, and cost-effective.
             No agents, no hidden fees, just smart technology working for you.
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-20">
           {steps.map((step, index) => (
             <div 
               key={step.number}
-              className={`flex flex-col lg:flex-row items-center gap-12 ${
+              className={`flex flex-col lg:flex-row items-start gap-12 ${
                 index % 2 === 1 ? 'lg:flex-row-reverse' : ''
               }`}
             >
               {/* Content */}
               <div className="flex-1 space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-glow">
+                <div className="flex items-center gap-6">
+                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-none flex items-center justify-center font-black text-lg border-2 border-primary">
                     {step.number}
                   </div>
-                  <div className="px-4 py-2 bg-accent/10 text-accent text-sm font-semibold rounded-full">
+                  <div className="px-4 py-2 bg-muted text-muted-foreground text-xs font-medium uppercase tracking-wider border border-border">
                     {step.highlight}
                   </div>
                 </div>
-                <h3 className="text-3xl font-bold text-foreground">
+                <h3 className="text-3xl font-black text-foreground tracking-tight">
                   {step.title}
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -67,12 +68,9 @@ const HowItWorks = () => {
 
               {/* Visual Element */}
               <div className="flex-1 flex justify-center">
-                <div className="w-80 h-64 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl border border-primary/10 flex items-center justify-center backdrop-blur-sm">
-                  <div className="text-6xl opacity-40">
-                    {step.number === "01" && "🎯"}
-                    {step.number === "02" && "📊"}
-                    {step.number === "03" && "💼"}
-                    {step.number === "04" && "🏠"}
+                <div className="w-full max-w-sm aspect-[4/3] bg-gradient-card border border-border flex items-center justify-center">
+                  <div className="text-4xl text-muted-foreground/30 font-black">
+                    {step.number}
                   </div>
                 </div>
               </div>
@@ -80,10 +78,10 @@ const HowItWorks = () => {
           ))}
         </div>
 
-        <div className="text-center mt-20">
-          <div className="inline-flex items-center gap-4 bg-success/10 text-success px-8 py-4 rounded-2xl">
-            <span className="text-2xl">💰</span>
-            <span className="font-semibold">Average savings: $18,000 in agent commissions</span>
+        <div className="text-center mt-24">
+          <div className="inline-flex items-center gap-4 bg-primary text-primary-foreground px-8 py-4 border-2 border-primary">
+            <span className="font-black text-lg">$18,000</span>
+            <span className="font-medium">Average savings in agent commissions</span>
           </div>
         </div>
       </div>

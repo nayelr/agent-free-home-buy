@@ -2,65 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ruma Design System - Premium Real Estate Platform */
+/* ruma Design System - Minimalist Black & White Theme */
 
 @layer base {
   :root {
-    /* Brand Colors - Deep blue to purple gradient theme */
-    --background: 220 20% 98%;
-    --foreground: 225 25% 8%;
+    /* Monochrome Color System */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 225 25% 8%;
+    --card-foreground: 0 0% 3.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 225 25% 8%;
+    --popover-foreground: 0 0% 3.9%;
 
-    /* Primary - Deep Navy */
-    --primary: 225 45% 12%;
+    /* Primary - Pure Black */
+    --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 225 35% 25%;
-    --primary-glow: 240 55% 65%;
+    --primary-light: 0 0% 20%;
 
-    /* Secondary - Modern Purple */
-    --secondary: 260 35% 20%;
-    --secondary-foreground: 0 0% 98%;
-    --secondary-light: 260 25% 35%;
+    /* Secondary - Light Gray */
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
 
-    /* Accent - Vibrant Blue */
-    --accent: 210 90% 55%;
-    --accent-foreground: 0 0% 100%;
-    --accent-light: 210 85% 70%;
-
-    /* Success - Home Green */
-    --success: 145 60% 45%;
-    --success-foreground: 0 0% 100%;
+    /* Accent - Dark Gray */
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
 
     /* Muted tones */
-    --muted: 220 15% 96%;
-    --muted-foreground: 225 15% 45%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 92%;
-    --ring: 225 45% 12%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 40%, hsl(var(--accent)) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--primary-glow)));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    /* Minimalist Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 3.9%), hsl(0 0% 15%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 3.9%) 0%, hsl(0 0% 9%) 50%, hsl(0 0% 15%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(0 0% 96.1%));
 
-    /* Shadows */
-    --shadow-elegant: 0 20px 60px -10px hsl(var(--primary) / 0.25);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
-    --shadow-card: 0 10px 30px -5px hsl(var(--primary) / 0.1);
+    /* Elegant Shadows */
+    --shadow-elegant: 0 25px 50px -12px hsl(0 0% 0% / 0.08);
+    --shadow-card: 0 4px 24px -6px hsl(0 0% 0% / 0.08);
+    --shadow-hover: 0 10px 40px -12px hsl(0 0% 0% / 0.12);
 
-    /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Refined Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --radius: 0.5rem;
 
